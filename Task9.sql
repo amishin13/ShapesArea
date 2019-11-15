@@ -1,4 +1,4 @@
---use <DB_NAME>
+п»ї--use <DB_NAME>
 --go
 
 -- Create tables
@@ -15,11 +15,11 @@ begin
 		,name
 	)
 	values
-		 (1, 'Колбаса')
-		,(2, 'Мясо')
-		,(3, 'Сок')
-		,(4, 'Пиво')
-		,(5, 'Хлеб')
+		 (1, 'РљРѕР»Р±Р°СЃР°')
+		,(2, 'РњСЏСЃРѕ')
+		,(3, 'РЎРѕРє')
+		,(4, 'РџРёРІРѕ')
+		,(5, 'РҐР»РµР±')
 end
 
 if not exists (select * from information_schema.tables where table_name = 'category')
@@ -35,10 +35,10 @@ begin
 		,name
 	)
 	values
-		 (1, 'Напитки')
-		,(2, 'Мясные изделия')
-		,(3, 'Алкоголь')
-		,(4, 'Бытовая химия')
+		 (1, 'РќР°РїРёС‚РєРё')
+		,(2, 'РњСЏСЃРЅС‹Рµ РёР·РґРµР»РёСЏ')
+		,(3, 'РђР»РєРѕРіРѕР»СЊ')
+		,(4, 'Р‘С‹С‚РѕРІР°СЏ С…РёРјРёСЏ')
 end
 
 if not exists (select * from information_schema.tables where table_name = 'product_category')
